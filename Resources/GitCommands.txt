@@ -57,3 +57,6 @@ git pull <nombre repositorio remoto> <branch>
 
 Cambiar el nombre del repositorio remoto para reconocimiento interno
 git remote rename <nombre repositorio remoto> <nuevo nombre>
+
+Ingreso con token de acceso para gitHub (Recomendado)
+https://www.aluracursos.com/blog/exigendia-autenticacion-por-token
