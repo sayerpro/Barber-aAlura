@@ -1,0 +1,58 @@
+Para ver la versión actual instalada de git en el sistema
+git --version
+
+Para iniciar un repositorio en la ruta local
+git init
+
+Rastrea el estado del repositorio el monitoreo de archivos, cambios y commits
+git status
+
+Agrega los cambios recientes para que sean tenidos encuenta en el siguiente commit
+git add <file> o . para tener en cuenta todo
+
+Descarta todos los cambios generados
+git restore <file> o . para tener en cuenta todo
+
+Para dejar de monitorear un archivo
+git rm --cached <file> o . para tener en cuenta todo
+
+Para hacer commit y guardar todos las cambios con una versión en el repositorio
+git commit -m "descripcion commit"
+
+Comando para hacer la configuración inicial de git, debe usarse para que git sepa quien esta haciendo los cambios "El autor" (tambien se puede usar con local para especificar quien lo hace en el repositorio especifico)
+git config --global user.email "email"
+git config --global user.name "nombre"
+
+Ver información listada de los commits hechos
+git log
+git log --oneline para ver todos los cambios de una sola linea
+git log -p        ver cambios realizados en los archivos (presiona enter para ver commits anteriores)
+:q                para salir del -p
+git log --pretty="format:%h <formatos de busqueda>"
+
+Para ignorar archivos o carpetas que no queremos en nuestro repositorio debemos usar el archivo .gitignore y escribir las rutas, archivos y carpetas que no queremos
+Para mas usos(https://devhints.io/git-log)
+
+Crear repositorio para guardar solo los cambios de otros repositorios un servidor "PURO"
+git init --bare
+
+Agregar repositorio remoto
+git remote add <name> <ruta>
+
+Ver listado de repositorios remotos
+git remote
+
+Ver si esta reconociendo los repositorios remotos
+git remote -v
+
+Clonar repositorio remoto
+git clone <ruta> <Se le puede especificar un nombre>
+
+Para empujar o subir los cambios guardados en los commits a un repositorio
+git push <nombre repositorio remoto> <branch>
+
+Para jalar o bajar los cambios de un repositorio remoto
+git pull <nombre repositorio remoto> <branch>
+
+Cambiar el nombre del repositorio remoto para reconocimiento interno
+git remote rename <nombre repositorio remoto> <nuevo nombre>

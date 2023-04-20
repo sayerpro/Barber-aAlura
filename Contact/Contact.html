@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Css/Reset.css">
+    <link rel="stylesheet" type="text/css" href="../Css/Head&Footer.css">
+    <link rel="stylesheet" type="text/css" href="Contact.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,400&f[]=stardom@400&display=swap" rel="stylesheet">
+    <script src="Contact.js"></script>
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <img src="../Images/BlackLogo.png" alt="Logo negro de la Barbería Alura; Una cabeza masculina con gafas, barba, bigote y un corte de cabello formal.">
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="../Index/Index.html">Inicio |</a></li>
+                    <li><a href="../Products/Products.html"> Productos </a></li>
+                    <li><a href="Contact.html">| Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="locationContainer">
+            <h2 class="location">Nuestra Ubicación</h2>
+            <p>Nuestro establecimiento esta ubicado en el corazón de la ciudad.</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.627062413234!2d-75.58151832405584!3d6.312624793676724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442ee0c4ae3469%3A0xc35edfcdbcedda1c!2sCra.%2073%20%2320f54%2C%20Paris%2C%20Bello%2C%20Antioquia!5e0!3m2!1sen!2sco!4v1681947344945!5m2!1sen!2sco"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <hr>
+        </section>
+        <div class="form-container">
+            <form action="">
+                <label for="name">Nombre y apellidos</label>
+                <input required class="inputForm" id="name" type="text" placeholder="Digite su nombre completo">
+
+                <label for="email">Correo electrónico</label>
+                <input required class="inputForm" id="email" type="email" placeholder="ejemplo@dominio.com">
+
+                <label for="phone">Teléfono movíl</label>
+                <input required class="inputForm" id="phone" type="number" placeholder="Digite su número teléfonico">
+
+                <label for="description">Mensaje</label>
+                <textarea required class="inputForm" name="description" id="description" rows="10" placeholder="Digite el mensaje o asunto por el cúal desea contactarnos"></textarea>
+                <fieldset>
+                    <legend>Marque la opción por la que desea recibir respuesta:</legend>
+                    <div>
+                        <label class="options" for="radioEmail">
+                            <input class="radioOptions" required id="radioEmail" name="contact" type="radio" value="email">Email
+                        </label>
+                    </div>
+                    <div>
+                        <label class="options" for="radioPhone">
+                            <input class="radioOptions" required id="radioPhone" name="contact" type="radio" value="llamada">Llamada
+                        </label>
+                    </div>
+                    <div>
+                        <label class="options" for="radioWhatsapp">
+                            <input class="radioOptions" required id="radioWhatsapp" name="contact" type="radio" value="whatsapp">WhatsApp
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>¿En que horario prefiere ser atendido?</legend>
+                    <select required>
+                        <option value="" hidden selected>Seleccione el horario</option>
+                        <option value="morning">Mañana</option>
+                        <option value="afterNoon">Tarde</option>
+                        <option value="night">Noche</option>
+                    </select>
+                </fieldset>
+                <div>
+                    <label class="inputCheck" for="checkNews">¿Le gustaria recibir novedades de la Barbería Alura?
+                        <input id="checkNews" type="checkbox" checked>
+                    </label>
+                </div>
+                <button id="buttonForm" type="submit">Enviar formulario</button>
+            </form>
+        </div>
+        <div class="infoContainer">
+            <div class="imgContainer">
+                <img id="imageContent" src="../Images/OldBarber.png" alt="Barbería encanto, antigua con filtro amarillento y dos personal del servicio soteniendo una toalla formalmentr">
+            </div>
+            <div class="tableContainer">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="thTitle1">Horarios</td>
+                                <th class="thTitle2">de</td>
+                                    <th class="thTitle3">atención</td>
+                        </tr>
+                        <tr>
+                            <th>Día</td>
+                                <th>Horario</td>
+                                    <th>Festivo</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>08h - 21h</td>
+                            <td>&#9989</td>
+                        </tr>
+                        <tr>
+                            <td>Martes</td>
+                            <td>10h - 22h</td>
+                            <td>&#10060</td>
+                        </tr>
+                        <tr>
+                            <td>Miercoles</td>
+                            <td>08h - 21h</td>
+                            <td>&#9989</td>
+                        </tr>
+                        <tr>
+                            <td>Jueves</td>
+                            <td>10h - 22h</td>
+                            <td>&#10060</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>08h - 21h</td>
+                            <td>&#9989</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="../Images/WhiteLogo.png" alt="Logo blanco de la Barbería Alura; Una cabeza masculina con gafas, barba, bigote y un corte de cabello formal.">
+        <p class="copyRightInfo">&COPY Copyright Barbería Alura - 2023</p>
+    </footer>
+</body>
+
+</html>
