@@ -50,6 +50,7 @@ git clone <ruta> <Se le puede especificar un nombre>
 
 Para empujar o subir los cambios guardados en los commits a un repositorio
 git push <nombre repositorio remoto> <branch>
+git push -u para que siempre que use git push no sea necesario poner el nombre y el branch
 
 Para jalar o bajar los cambios de un repositorio remoto
 git pull <nombre repositorio remoto> <branch>
