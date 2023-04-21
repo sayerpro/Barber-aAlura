@@ -75,10 +75,6 @@ Unir cambios de diferentes ramas(branchs)
 git merge <nombre branch> del cual vas a jalar y combinar los cambios
 
 Traer todos los cambios incluyendo los commits del otro branch
-<<<<<<< HEAD
 git rebase <nombre branch>
 
 ASD
-=======
-git rebase <nombre branch>
->>>>>>> e127583 (Instrucciones de rebase en gitCommands)
