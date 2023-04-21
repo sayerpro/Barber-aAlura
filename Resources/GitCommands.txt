@@ -60,3 +60,9 @@ git remote rename <nombre repositorio remoto> <nuevo nombre>
 
 Ingreso con token de acceso para gitHub (Recomendado)
 https://www.aluracursos.com/blog/exigendia-autenticacion-por-token
+
+Crear un branch
+git branch <nombre>
+
+Cambiar de branch
+git checkout <nombre branch>
