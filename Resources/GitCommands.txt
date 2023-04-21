@@ -29,6 +29,7 @@ git log --oneline para ver todos los cambios de una sola linea
 git log -p        ver cambios realizados en los archivos (presiona enter para ver commits anteriores)
 :q                para salir del -p
 git log --pretty="format:%h <formatos de busqueda>"
+git log --graph ver de forma mas visual
 
 Para ignorar archivos o carpetas que no queremos en nuestro repositorio debemos usar el archivo .gitignore y escribir las rutas, archivos y carpetas que no queremos
 Para mas usos(https://devhints.io/git-log)
@@ -74,6 +75,10 @@ Unir cambios de diferentes ramas(branchs)
 git merge <nombre branch> del cual vas a jalar y combinar los cambios
 
 Traer todos los cambios incluyendo los commits del otro branch
+<<<<<<< HEAD
 git rebase <nombre branch>
 
 ASD
+=======
+git rebase <nombre branch>
+>>>>>>> e127583 (Instrucciones de rebase en gitCommands)
