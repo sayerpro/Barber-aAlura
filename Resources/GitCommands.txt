@@ -27,7 +27,7 @@ Ver información listada de los commits hechos
 git log
 git log --oneline para ver todos los cambios de una sola linea
 git log -p        ver cambios realizados en los archivos (presiona enter para ver commits anteriores)
-:q                para salir del -p
+:q o :x                para salir del -p
 git log --pretty="format:%h <formatos de busqueda>"
 git log --graph ver de forma mas visual
 

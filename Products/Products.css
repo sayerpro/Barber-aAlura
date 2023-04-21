@@ -1,63 +1,63 @@
 main {
-    font-family: 'Satoshi', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
+	font-family: "Satoshi", sans-serif;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .productList {
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px;
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px;
 }
 
 .productList li {
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-    border: 2px solid #000000;
-    border-radius: 2%;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	border: 2px solid #000000;
+	border-radius: 2%;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
 }
 
 .productList li:hover {
-    border-color: #a6b425;
-    background-color: #e7e7e7;
-    opacity: .9;
+	border-color: #a6b425;
+	background-color: #e7e7e7;
+	opacity: 0.9;
 }
 
 .productList li:active {
-    border-color: #2EBF2F;
+	border-color: #2ebf2f;
 }
 
 .productList li:hover h2 {
-    font-size: 33px;
+	font-size: 33px;
 }
 
 .productList h2 {
-    font-size: 30px;
-    font-weight: bold;
+	font-size: 30px;
+	font-weight: bold;
 }
 
 .productDesc {
-    font-size: 18px;
+	font-size: 18px;
 }
 
 .productPrice {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
 }
 
-@media screen and (max-width:820px) {
-    .productList,
-    main {
-        width: auto;
-    }
-    .productList li {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+@media screen and (max-width: 820px) {
+	.productList,
+	main {
+		width: auto;
+	}
+	.productList li {
+		width: 100%;
+		margin-bottom: 20px;
+	}
 }
