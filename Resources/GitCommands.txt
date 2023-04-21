@@ -72,3 +72,8 @@ git checkout -b <nombre branch>
 
 Unir cambios de diferentes ramas(branchs)
 git merge <nombre branch> del cual vas a jalar y combinar los cambios
+
+Traer todos los cambios incluyendo los commits del otro branch
+git rebase <nombre branch>
+
+ASD
