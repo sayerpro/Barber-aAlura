@@ -13,6 +13,12 @@ git add <file> o . para tener en cuenta todo
 Descarta todos los cambios generados
 git restore <file> o . para tener en cuenta todo
 
+Devolver cambios u archivos de un add .
+git restore --staged <file>  o . para tener en cuenta todo
+
+Devolver cambios u archivos de un commit
+git revert <hash del commit>
+
 Para dejar de monitorear un archivo
 git rm --cached <file> o . para tener en cuenta todo
 
@@ -30,6 +36,7 @@ git log -p        ver cambios realizados en los archivos (presiona enter para ve
 :q o :x                para salir del -p
 git log --pretty="format:%h <formatos de busqueda>"
 git log --graph ver de forma mas visual
+git log -n # vespecificar cuantos commits quiere ver
 
 Para ignorar archivos o carpetas que no queremos en nuestro repositorio debemos usar el archivo .gitignore y escribir las rutas, archivos y carpetas que no queremos
 Para mas usos(https://devhints.io/git-log)
@@ -71,8 +78,35 @@ git checkout <nombre branch>
 Crear y moverse de una vez al nuevo branch
 git checkout -b <nombre branch>
 
+Ir a un commit, version o cambio anterior
+git checkout <hash del commit>
+
 Unir cambios de diferentes ramas(branchs)
 git merge <nombre branch> del cual vas a jalar y combinar los cambios
 
 Traer todos los cambios incluyendo los commits del otro branch
 git rebase <nombre branch>
+
+Guardar trabajo en progreso no hace add . ni commit
+git stash
+
+Ver lista de stash guardados
+git stash list
+
+Retomar los cambios del stash
+git stash apply #
+
+Eliminar el ultimo stash y lo agrega al mismo tiempo al código
+git stash pop
+
+Eliminar stash especifico
+git stash drop #
+
+Mostrar diferencia entre dos commits
+git diff <desde hash commit>..<hasta hash commit>
+
+Crear bandera de punto de partida para el código
+git tag -a <nombre tag v0.1.0> -m "Lanzando la primera version"
+
+Para enviar la tag al repositorio remoto
+git push <nombre repositorio remoto> <nombre tag>
