@@ -66,3 +66,9 @@ git branch <nombre>
 
 Cambiar de branch
 git checkout <nombre branch>
+
+Crear y moverse de una vez al nuevo branch
+git checkout -b <nombre branch>
+
+Unir cambios de diferentes ramas(branchs)
+git merge <nombre branch> del cual vas a jalar y combinar los cambios
