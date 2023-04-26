@@ -110,3 +110,6 @@ git tag -a <nombre tag v0.1.0> -m "Lanzando la primera version"
 
 Para enviar la tag al repositorio remoto
 git push <nombre repositorio remoto> <nombre tag>
+
+Cambiar url del repositorio remoto
+git remote set-url <nombre repositorio remoto> <url>
