@@ -113,3 +113,5 @@ git push <nombre repositorio remoto> <nombre tag>
 
 Cambiar url del repositorio remoto
 git remote set-url <nombre repositorio remoto> <url>
+ Cambiar nombre de branch
+git branch -m new-name
